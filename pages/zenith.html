@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Zenith - Riska Aulia</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <main class="card-container">
+    
+    <!-- Navigation Utama -->
+    <nav class="tab-menu">
+      <a href="../index.html" class="tab-btn">Beranda</a>
+      <a href="../pages/gallery.html" class="tab-btn active">Galeri</a>
+      <a href="../pages/certificate.html" class="tab-btn">Sertifikat</a>
+    </nav>
+    
+    <!-- Header -->
+    <header class="profile-header">
+      <img src="../images/Foto.riska.jpg" alt="Foto Profil Riska Aulia" class="profile-avatar">
+      <h1 class="profile-name">Riska Aulia</h1>
+      <p class="profile-tagline">XI TKJ 3 — SMKN 3 SOPPENG</p>
+    </header>
+
+    
+
+    <!-- Seksi Utama Gallery Zenith -->
+    <section class="profile-section">
+      <h2 class="section-title">Galeri Foto - Zenith</h2>
+      
+      <!-- SUB-KATEGORI (Tombol Zenith Aktif) -->
+      <div class="category-menu">
+        <a href="../pages/Merakit-Instalasi.html" class="cat-btn">Merakit dan Instalasi</a>
+        <a href="../pages/zenith.html" class="cat-btn active">Zenith</a>
+        <a href="../pages/dream-girls.html" class="cat-btn">Dream Girl</a>
+        <a href="../pages/spemla.html" class="cat-btn">Spemla</a>
+        <a href="../pages/r.html" class="cat-btn">Riska</a>
+      </div>
+
+      <!-- FOTO-FOTO KATEGORI ZENITH -->
+      <div class="gallery-grid">
+        <div class="gallery-card"><img src="../images/Zenith1.jpg" alt="Zenith 1">
+        <div class="gallery-card"><img src="../images/Zenith2.jpg" alt="Zenith 2">
+        <div class="gallery-card"><img src="../images/Zenith3.jpg" alt="Zenith 3">
+        <div class="gallery-card"><img src="../images/Zenith4.jpg" alt="Zenith 4">
+        <div class="gallery-card"><img src="../images/Zenith5.jpg" alt="Zenith 5">
+      </div>
+
+    </section>
+<!-- Script JavaScript Pemindah Kategori -->
+  <script>
+    function openCategory(catName) {
+      let contents = document.querySelectorAll('.category-content');
+      contents.forEach(content => content.classList.remove('active-cat'));
+
+      let buttons = document.querySelectorAll('.cat-btn');
+      buttons.forEach(button => button.classList.remove('active'));
+
+      document.getElementById(catName).classList.add('active-cat');
+      event.currentTarget.classList.add('active');
+    }
+          
+    <!-- Footer -->
+    <footer class="profile-footer">
+      <p>HTML & CSS Dasar — Riska Aulia</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
